@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    margin: 10px;
+    padding: 20px 50px;
+    background-color: #87CEFA;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #6baed8;
+}
+
+#question {
+    font-size: 50px; /* Change this to whatever base size you want plus 20 */
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
