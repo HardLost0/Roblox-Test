@@ -56,3 +56,124 @@ body {
     line-height: 75px;
     font-size: 30px;
   }
+
+  /* In styles.css */
+#volume-slider {
+    width: 200px;
+    height: 4px;
+    background-color: #ddd;
+    appearance: none;
+  }
+  
+  #volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .gamepass-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px; /* Adjust the width as needed */
+    text-align: center;
+  }
+  
+  .gamepass-card img {
+    width: 100%;
+  }
+  
+  .setting-item {
+    margin-bottom: 10px;
+  }
+
+  /* Your existing styles */
+
+  /* Toggle switch styles */
+  .toggle {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 52px;
+    background-color: red;
+    border-radius: 30px;
+    border: 2px solid gray;
+  }
+
+  .toggle:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 1px;
+    left: 1px;
+    transition: all 0.5s;
+  }
+
+  .checkbox:checked + .toggle::after {
+    left: 49px;
+  }
+
+  .checkbox:checked + .toggle {
+    background-color: green;
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .toggle {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 52px;
+    background-color: rgb(238, 27, 27);
+    border-radius: 30px;
+    border: 2px solid   
+gray;
+  }
+
+  .toggle:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 1px;
+    left: 1px;
+    transition: all   
+0.5s;
+  }
+
+  .checkbox:checked + .toggle::after {
+    left: 49px;
+  }
+
+  .checkbox:checked + .toggle {
+    background-color: rgb(50, 230, 50);
+  }
+
+  .checkbox   
+{
+    display: none;
+  }
+
+  /* Night mode styles */
+  body.night-mode {
+    background-color: #121212;
+    color: #fff;
+  }
+
+  .night-mode .toggle {
+    background-color: #333;
+  }
+
+  .night-mode .toggle:after {
+    background-color: #666;
+  }
